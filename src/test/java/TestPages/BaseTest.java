@@ -1,7 +1,6 @@
 package TestPages;
 
-import com.heatclinic.pages.LoginPage;
-import com.heatclinic.pages.RegistrationPage;
+import com.heatclinic.pages.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +15,9 @@ public class BaseTest {
     //Test Classes
     protected RegistrationPage registrationPage;
     protected LoginPage loginPage;
-
+    protected AddToCartPage addToCartPage;
+    protected CheckoutPage checkoutPage;
+    protected BillingShippingInforPage billingShippingInforPage;
     //protected RegistrationPageParamOne registrationPageParamOne;
 
 
