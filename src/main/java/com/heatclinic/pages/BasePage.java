@@ -4,14 +4,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.SourceType;
 
 public class BasePage {
-    String email = "abcdef12384@me.com";
+    String email = "abcdef12385455@me.com";
     private static WebDriver driver;
     //create a constructor
 
     public BasePage(WebDriver driver) {
-
         this.driver = driver;
     }
 
@@ -41,6 +41,7 @@ public class BasePage {
     public static void javascriptExecutorsClick(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
+
     }
 
     //This method enters text in a textBox

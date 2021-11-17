@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class RegistrationPage extends BasePage {
     protected String firstName = "Awesome";
@@ -44,6 +45,6 @@ public class RegistrationPage extends BasePage {
         clickOnElement(registerButton);
         Thread.sleep(1000);
         System.out.println("Actual text: " + userNameText.getText());
-        // Assert.assertTrue(userNameText.getText().toLowerCase().contains("firstName"));
+        Assert.assertTrue(userNameText.getText().toLowerCase().contains("firstName"));
     }
 }
